@@ -1151,5 +1151,62 @@ XV. Loader
   40% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
+.hc-dropdown {
+  z-index: 90000;
+  width: 300px;
+  position: relative; }
+
+.hc-drophead {
+  transition: all 0.5s ease;
+  cursor: pointer;
+  background: #777;
+  -moz-box-shadow: 0 1px 0 white inset, 0 -1px 0 #d5d5d5 inset;
+  -webkit-box-shadow: 0 1px 0 white inset, 0 -1px 0 #d5d5d5 inset;
+  box-shadow: 0 1px 0 white inset, 0 -1px 0 #d5d5d5 inset;
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  font-size: 1.7rem;
+  text-align: left;
+  color: white; }
+  .hc-drophead:hover {
+    background: #5e5e5e; }
+  .hc-drophead:after {
+    position: absolute;
+    display: block;
+    content: '\25BC';
+    font-size: 0.7em;
+    top: 16px;
+    color: white;
+    right: 25px; }
+
+.hc-dropmenu {
+  display: none;
+  width: 100%;
+  max-width: 300px;
+  max-height: 9999px;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-bottom: none; }
+  .hc-dropmenu li {
+    font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: white;
+    border-bottom: 1px solid #ccc;
+    padding: 12px 10px 8px;
+    cursor: pointer;
+    transition: all 0.5s ease; }
+    .hc-dropmenu li:hover {
+      background: #e6e6e6; }
+    .hc-dropmenu li a {
+      color: #777;
+      font-size: 1.7rem;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      height: 100%; }
 
 /*# sourceMappingURL=custom.css.map */

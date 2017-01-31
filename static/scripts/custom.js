@@ -9,4 +9,7 @@ $(document).ready(function() {
     //                                                                             | |
     //                                                                             |_|
 
+    $('.hc-dropdown').click(function () {
+    	$('.hc-dropmenu').slideToggle();
+    });
 });
